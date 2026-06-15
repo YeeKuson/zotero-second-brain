@@ -1,0 +1,57 @@
+# Local agent settings
+.claude/settings.local.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Temporary files
+*.tmp
+*.bak
+~$*
+
+# Never vendor Zotero data into this repository
+zotero.sqlite
+storage/
+*.pdf
+
+# ─── Ship the tool, keep personal content & build artifacts local ───
+# Your Zotero-derived catalog, generated indexes, and your compiled notes / syntheses /
+# outputs are per-user content (rebuilt by `sync`, compiled by you). Empty dirs are kept
+# via .gitkeep so a fresh clone still passes check_structure.
+catalog/*
+!catalog/.gitkeep
+indexes/*
+!indexes/.gitkeep
+notes/*
+!notes/.gitkeep
+outputs/*
+!outputs/.gitkeep
+logs/*
+!logs/.gitkeep
+syntheses/*
+!syntheses/categories/
+!syntheses/topics/
+syntheses/categories/*
+!syntheses/categories/.gitkeep
+syntheses/topics/*
+!syntheses/topics/.gitkeep
+entities/*
+!entities/methods/
+!entities/datasets/
+!entities/authors/
+entities/methods/*
+!entities/methods/.gitkeep
+entities/datasets/*
+!entities/datasets/.gitkeep
+entities/authors/*
+!entities/authors/.gitkeep
+
+# ─── Private — not for public release ───
+docs/
+PROJECT-GUIDE.md
+config.yaml

@@ -1,0 +1,60 @@
+# ============================================================
+# 配置范例。第一次用：把本文件复制一份、改名为 config.yaml，再改下面的 Zotero 路径。
+#
+# 最省事的办法：在 Claude Code 里直接说一句
+#   “我是新手，帮我连上我的 Zotero”
+# 让 agent 替你找路径、填好这个文件，你不用自己改。
+#
+# 想自己改也行——Zotero 数据目录在哪？
+#   打开 Zotero → 编辑 → 设置 → 高级 → 文件和文件夹 → “数据目录位置”
+#   那个文件夹里就有 zotero.sqlite 和 storage 文件夹，把下面三行换成它的真实路径。
+#   （Windows 默认通常是 C:\Users\你的用户名\Zotero）
+# 注意：Windows 路径里的反斜杠要写成两个，例如 C:\\Users\\name\\Zotero
+# ============================================================
+
+zotero:
+  data_dir: "C:\\Users\\你的用户名\\Zotero"
+  sqlite_path: "C:\\Users\\你的用户名\\Zotero\\zotero.sqlite"
+  storage_dir: "C:\\Users\\你的用户名\\Zotero\\storage"
+  readonly_uri: true
+  immutable: true
+
+catalog:
+  include_item_types:
+    - journalArticle
+    - conferencePaper
+    - preprint
+    - thesis
+    - bookSection
+  include_webpage: false
+  include_abstract_in_catalog: true
+  output_dir: catalog
+
+citation_key:
+  preferred_field: citationKey
+  fallback: first_author_year_titleword
+
+matrix:
+  # 矩阵的两个轴。换成你自己研究领域里的“问题标签”和“方法标签”。
+  problem_tags:
+    - 冲突解脱
+    - 扇区优化
+    - 航迹规划
+    - 冲突探测
+  method_tags:
+    - 深度强化学习
+    - 强化学习
+    - 鲁棒强化学习
+    - 数学规划方法
+    - 决策树
+    - 可解释性
+
+search:
+  fields:
+    - title
+    - abstract
+    - tags
+    - collections
+    - fulltext_cache
+  max_context_chars: 180
+  default_limit: 20

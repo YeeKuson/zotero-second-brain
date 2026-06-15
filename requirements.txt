@@ -1,0 +1,3 @@
+# 本项目依赖。安装：pip install -r requirements.txt
+# PyYAML 用于读取 config.yaml；不装它，你对 config.yaml 的修改不会生效。
+PyYAML>=6.0
