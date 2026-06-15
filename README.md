@@ -3,6 +3,15 @@
 > 把你 Zotero 里的论文，提前「编译」成可复用的研究判断——让你能像问一个读过你所有论文的助手那样，用大白话跟它讨论。
 > Pre-*compile* the papers in your Zotero into reusable research judgments — so you can talk to a *second brain* that has read everything you saved.
 
+
+> 📖 更详细的项目介绍与开发细节，记录在飞书知识库：[《🧠 把论文变成「第二大脑」：Zotero 编译型知识库 · 深度介绍》](https://mcnj84082pxc.feishu.cn/wiki/Jv8FwWaQWi4Kt9kgf9qcFssgnZc?from=from_copylink)。想了解更多设计取舍、开发过程和使用场景，欢迎去看。
+>
+> 📮 欢迎关注作者的微信公众号「海绵朋克」。作者的更多 AI 开发实践和思考，会在公众号第一时间分享。
+
+<p align="center">
+  <img src="assets/wechat-hmpunk.jpg" alt="微信公众号：海绵朋克" width="220" />
+</p>
+
 **🌐 [中文](#-中文) · [English](#-english)**
 
 ---
